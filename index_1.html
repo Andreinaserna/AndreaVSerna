@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrea Vega Serna · Hansenmanía</title>
+<meta name="description" content="Portafolio de Andrea Gisela Vega Serna (Hansenmanía) — escritora, docente e investigadora en narrativas transmedia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="#inicio" class="logo">Hansenmanía</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#publicaciones">Publicaciones</a></li>
+      <li><a href="#docencia">Docencia</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><button class="theme-toggle" id="themeToggle" aria-label="Cambiar a tema oscuro" title="Cambiar tema">🌙</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content reveal">
+      <p class="eyebrow">Escritora · Docente · Investigadora</p>
+      <h1>Andrea Gisela Vega Serna</h1>
+      <p class="hero-tagline">Escribo como <strong>Hansenmanía</strong>. Investigo narrativas transmedia, artes digitales y escritura creativa para públicos jóvenes, y enseño en distintas universidades de Colombia.</p>
+      <div class="hero-actions">
+        <a href="#publicaciones" class="btn btn-primary">Ver publicaciones</a>
+        <a href="#contacto" class="btn btn-secondary">Escríbeme</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="section reveal">
+    <h2>Sobre mí</h2>
+    <div class="about-grid">
+      <p>
+        [Escribe aquí tu biografía en dos o tres párrafos: tu trayectoria como escritora, tu paso por el diseño de
+        contenidos interactivos y la producción audiovisual, y tu investigación doctoral en la Universidad de
+        Antioquia sobre narrativas transmedia, artes digitales y escritura creativa para jóvenes.]
+      </p>
+      <ul class="about-facts">
+        <li><strong>Doctorado</strong> en curso — Universidad de Antioquia</li>
+        <li><strong>Docencia</strong> — Universidad Icesi, Universidad del Valle</li>
+        <li><strong>Editoriales</strong> — Norma, SM, Penguin Kids Colombia</li>
+        <li><strong>Con base en</strong> Colombia</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="publicaciones" class="section reveal">
+    <h2>Publicaciones</h2>
+    <div class="filter-tabs" role="tablist" aria-label="Filtrar publicaciones">
+      <button class="filter-btn active" data-group="publicaciones" data-filter="todas">Todas</button>
+      <button class="filter-btn" data-group="publicaciones" data-filter="literaria">Literaria</button>
+      <button class="filter-btn" data-group="publicaciones" data-filter="academica">Académica</button>
+    </div>
+    <div class="cards-grid" id="publicacionesGrid">
+      <article class="card" data-category="literaria">
+        <span class="card-tag">Editorial Norma</span>
+        <h3>[Título del libro]</h3>
+        <p>[Breve descripción o sinopsis.]</p>
+        <a href="#" class="card-link">Más información →</a>
+      </article>
+      <article class="card" data-category="literaria">
+        <span class="card-tag">Editorial SM</span>
+        <h3>[Título del libro]</h3>
+        <p>[Breve descripción o sinopsis.]</p>
+        <a href="#" class="card-link">Más información →</a>
+      </article>
+      <article class="card" data-category="literaria">
+        <span class="card-tag">Penguin Kids Colombia</span>
+        <h3>[Título del libro]</h3>
+        <p>[Breve descripción o sinopsis.]</p>
+        <a href="#" class="card-link">Más información →</a>
+      </article>
+      <article class="card" data-category="academica">
+        <span class="card-tag">Investigación</span>
+        <h3>[Título del artículo o ponencia]</h3>
+        <p>[Breve descripción.]</p>
+        <a href="#" class="card-link">Más información →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="docencia" class="section reveal">
+    <h2>Docencia</h2>
+    <ul class="timeline">
+      <li><strong>Universidad de Antioquia</strong> — [asignatura o programa]</li>
+      <li><strong>Universidad Icesi</strong> — [asignatura o programa]</li>
+      <li><strong>Universidad del Valle</strong> — [asignatura o programa]</li>
+    </ul>
+  </section>
+
+  <section id="proyectos" class="section reveal">
+    <h2>Proyectos y otros trabajos</h2>
+    <div class="filter-tabs" role="tablist" aria-label="Filtrar proyectos">
+      <button class="filter-btn active" data-group="proyectos" data-filter="todas">Todos</button>
+      <button class="filter-btn" data-group="proyectos" data-filter="transmedia">Transmedia</button>
+      <button class="filter-btn" data-group="proyectos" data-filter="comunicacion">Comunicación</button>
+    </div>
+    <div class="cards-grid" id="proyectosGrid">
+      <article class="card" data-category="transmedia">
+        <span class="card-tag">Contenido interactivo</span>
+        <h3>[Nombre del proyecto]</h3>
+        <p>[Describe el proyecto: diseño de contenidos interactivos, producción audiovisual, etc.]</p>
+      </article>
+      <article class="card" data-category="comunicacion">
+        <span class="card-tag">Comunicación territorial</span>
+        <h3>[Nombre del proyecto]</h3>
+        <p>[Describe tu trabajo en comunicación para planeación urbana y territorial.]</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacto" class="section reveal">
+    <h2>Contacto</h2>
+    <p>¿Quieres escribirme sobre un proyecto, una colaboración o una invitación? Completa el formulario o escríbeme directamente.</p>
+
+    <form class="contact-form" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <div class="social-links">
+      <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a>
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Andrea Gisela Vega Serna · Hansenmanía</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
